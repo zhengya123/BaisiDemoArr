@@ -69,7 +69,10 @@
 		C73E6A531F94A39C00500928 /* FJSegmentedTagTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A471F94A39C00500928 /* FJSegmentedTagTitleCell.m */; };
 		C73E6A541F94A39C00500928 /* FJSegmentedTagTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A491F94A39C00500928 /* FJSegmentedTagTitleView.m */; };
 		C73E6A571F94A98200500928 /* PersonalHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C73E6A561F94A98200500928 /* PersonalHeaderView.m */; };
-		C7E69EFE1FC5794C00DD6E93 /* ZYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E69EFD1FC5794C00DD6E93 /* ZYTestViewController.m */; };
+		C76E43E11FC7C19300C2A09A /* ZYTestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C76E43E01FC7C19300C2A09A /* ZYTestViewController.m */; };
+		C76E43E71FC7C19F00C2A09A /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = C76E43E41FC7C19F00C2A09A /* ChineseString.m */; };
+		C76E43E81FC7C19F00C2A09A /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = C76E43E51FC7C19F00C2A09A /* pinyin.c */; };
+		C7BC38A01FC7B21100AA7220 /* NSString+ChinesePinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = C7BC389F1FC7B21100AA7220 /* NSString+ChinesePinyin.m */; };
 		C7E69F051FC5796800DD6E93 /* Arrow.png in Resources */ = {isa = PBXBuildFile; fileRef = C7E69F001FC5796800DD6E93 /* Arrow.png */; };
 		C7E69F061FC5796800DD6E93 /* ZYFoldingSectionHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E69F021FC5796800DD6E93 /* ZYFoldingSectionHeader.m */; };
 		C7E69F071FC5796800DD6E93 /* ZYFoldingTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = C7E69F041FC5796800DD6E93 /* ZYFoldingTableView.m */; };
@@ -314,7 +317,6 @@
 		DF5B40831E8C98DC00E04C27 /* ButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40271E8C98DC00E04C27 /* ButtonView.m */; };
 		DF5B40841E8C98DC00E04C27 /* HeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40291E8C98DC00E04C27 /* HeaderTableViewCell.m */; };
 		DF5B40851E8C98DC00E04C27 /* FirstHTMLVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B402D1E8C98DC00E04C27 /* FirstHTMLVC.m */; };
-		DF5B40861E8C98DC00E04C27 /* NSString+pinyin.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40301E8C98DC00E04C27 /* NSString+pinyin.m */; };
 		DF5B40871E8C98DC00E04C27 /* UserDTO.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40321E8C98DC00E04C27 /* UserDTO.m */; };
 		DF5B40881E8C98DC00E04C27 /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40341E8C98DC00E04C27 /* Utils.m */; };
 		DF5B40891E8C98DC00E04C27 /* TeamSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DF5B40361E8C98DC00E04C27 /* TeamSearchVC.m */; };
@@ -526,8 +528,14 @@
 		C73E6A491F94A39C00500928 /* FJSegmentedTagTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FJSegmentedTagTitleView.m; sourceTree = "<group>"; };
 		C73E6A551F94A98200500928 /* PersonalHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalHeaderView.h; sourceTree = "<group>"; };
 		C73E6A561F94A98200500928 /* PersonalHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalHeaderView.m; sourceTree = "<group>"; };
-		C7E69EFC1FC5794C00DD6E93 /* ZYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTestViewController.h; sourceTree = "<group>"; };
-		C7E69EFD1FC5794C00DD6E93 /* ZYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTestViewController.m; sourceTree = "<group>"; };
+		C76E43DF1FC7C19300C2A09A /* ZYTestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYTestViewController.h; sourceTree = "<group>"; };
+		C76E43E01FC7C19300C2A09A /* ZYTestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYTestViewController.m; sourceTree = "<group>"; };
+		C76E43E31FC7C19F00C2A09A /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
+		C76E43E41FC7C19F00C2A09A /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
+		C76E43E51FC7C19F00C2A09A /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
+		C76E43E61FC7C19F00C2A09A /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		C7BC389E1FC7B21100AA7220 /* NSString+ChinesePinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ChinesePinyin.h"; sourceTree = "<group>"; };
+		C7BC389F1FC7B21100AA7220 /* NSString+ChinesePinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ChinesePinyin.m"; sourceTree = "<group>"; };
 		C7E69F001FC5796800DD6E93 /* Arrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Arrow.png; sourceTree = "<group>"; };
 		C7E69F011FC5796800DD6E93 /* ZYFoldingSectionHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYFoldingSectionHeader.h; sourceTree = "<group>"; };
 		C7E69F021FC5796800DD6E93 /* ZYFoldingSectionHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYFoldingSectionHeader.m; sourceTree = "<group>"; };
@@ -907,8 +915,6 @@
 		DF5B40291E8C98DC00E04C27 /* HeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeaderTableViewCell.m; sourceTree = "<group>"; };
 		DF5B402C1E8C98DC00E04C27 /* FirstHTMLVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstHTMLVC.h; sourceTree = "<group>"; };
 		DF5B402D1E8C98DC00E04C27 /* FirstHTMLVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstHTMLVC.m; sourceTree = "<group>"; };
-		DF5B402F1E8C98DC00E04C27 /* NSString+pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+pinyin.h"; sourceTree = "<group>"; };
-		DF5B40301E8C98DC00E04C27 /* NSString+pinyin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+pinyin.m"; sourceTree = "<group>"; };
 		DF5B40311E8C98DC00E04C27 /* UserDTO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDTO.h; sourceTree = "<group>"; };
 		DF5B40321E8C98DC00E04C27 /* UserDTO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDTO.m; sourceTree = "<group>"; };
 		DF5B40331E8C98DC00E04C27 /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
@@ -1323,6 +1329,17 @@
 			path = FJSegmentedTitleView;
 			sourceTree = "<group>";
 		};
+		C76E43E21FC7C19F00C2A09A /* Pinyin */ = {
+			isa = PBXGroup;
+			children = (
+				C76E43E31FC7C19F00C2A09A /* ChineseString.h */,
+				C76E43E41FC7C19F00C2A09A /* ChineseString.m */,
+				C76E43E51FC7C19F00C2A09A /* pinyin.c */,
+				C76E43E61FC7C19F00C2A09A /* pinyin.h */,
+			);
+			path = Pinyin;
+			sourceTree = "<group>";
+		};
 		C7E69EFF1FC5796800DD6E93 /* ZY_FoldingTableView */ = {
 			isa = PBXGroup;
 			children = (
@@ -1532,6 +1549,7 @@
 		DF5B3E201E8C98BC00E04C27 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				C76E43E21FC7C19F00C2A09A /* Pinyin */,
 				C7E69EFF1FC5796800DD6E93 /* ZY_FoldingTableView */,
 				C72F43561FB587C7006F4349 /* BHBPopView */,
 				C73E6A2E1F94A39C00500928 /* FJSegmentedPager */,
@@ -2348,8 +2366,8 @@
 		DF5B402E1E8C98DC00E04C27 /* SearchDetail */ = {
 			isa = PBXGroup;
 			children = (
-				DF5B402F1E8C98DC00E04C27 /* NSString+pinyin.h */,
-				DF5B40301E8C98DC00E04C27 /* NSString+pinyin.m */,
+				C7BC389E1FC7B21100AA7220 /* NSString+ChinesePinyin.h */,
+				C7BC389F1FC7B21100AA7220 /* NSString+ChinesePinyin.m */,
 				DF5B40311E8C98DC00E04C27 /* UserDTO.h */,
 				DF5B40321E8C98DC00E04C27 /* UserDTO.m */,
 				DF5B40331E8C98DC00E04C27 /* Utils.h */,
@@ -2397,8 +2415,8 @@
 				C7F6C0BE1FC576AE00D2C2AE /* TESTViewController.h */,
 				C7F6C0BF1FC576AE00D2C2AE /* TESTViewController.m */,
 				C7F6C0C01FC576AE00D2C2AE /* TESTViewController.xib */,
-				C7E69EFC1FC5794C00DD6E93 /* ZYTestViewController.h */,
-				C7E69EFD1FC5794C00DD6E93 /* ZYTestViewController.m */,
+				C76E43DF1FC7C19300C2A09A /* ZYTestViewController.h */,
+				C76E43E01FC7C19300C2A09A /* ZYTestViewController.m */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -3074,6 +3092,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C76E43E81FC7C19F00C2A09A /* pinyin.c in Sources */,
 				C72F437D1FB587C7006F4349 /* UIView+BHBAnimation.m in Sources */,
 				DF758D481F03A168006A43C7 /* ApproveCommonModel.m in Sources */,
 				C72F43A31FB59C9B006F4349 /* FTIntellecMenuSelectModel.m in Sources */,
@@ -3102,6 +3121,7 @@
 				C72F437C1FB587C7006F4349 /* UIImageView+BHBSetImage.m in Sources */,
 				DF5B40811E8C98DC00E04C27 /* FellowViewController.m in Sources */,
 				DF5B3F311E8C98BC00E04C27 /* XWFilterAnimator+XWBarSwipe.m in Sources */,
+				C76E43E71FC7C19F00C2A09A /* ChineseString.m in Sources */,
 				DF5B3F111E8C98BC00E04C27 /* UIViewController+WXSTransition.m in Sources */,
 				DF5B408C1E8C98DC00E04C27 /* TeamSearchModel.m in Sources */,
 				DF5B3F201E8C98BC00E04C27 /* UINavigationController+XWTransition.m in Sources */,
@@ -3177,7 +3197,6 @@
 				DF76CC3A1F3C3000006C9C81 /* PNScatterChartData.m in Sources */,
 				DF5B3EF61E8C98BC00E04C27 /* HeartBeat.m in Sources */,
 				DF74B21F1EEA954000B266CC /* BaiduMapBottomView.m in Sources */,
-				C7E69EFE1FC5794C00DD6E93 /* ZYTestViewController.m in Sources */,
 				DFB767B91E9B5DBE00D480F8 /* ZY_AlertNotesView.m in Sources */,
 				DF5B3F4C1E8C98BC00E04C27 /* ZY_Method.m in Sources */,
 				DF5B3F281E8C98BC00E04C27 /* XWCoolAnimator+XWExplode.m in Sources */,
@@ -3186,6 +3205,7 @@
 				C73E6A541F94A39C00500928 /* FJSegmentedTagTitleView.m in Sources */,
 				DF5B409F1E8C98DC00E04C27 /* CollectionTableViewCell.m in Sources */,
 				DF5B3F0C1E8C98BC00E04C27 /* UIView+TXFrame.m in Sources */,
+				C76E43E11FC7C19300C2A09A /* ZYTestViewController.m in Sources */,
 				DF5B40921E8C98DC00E04C27 /* MyInformationController.m in Sources */,
 				DF5B3F4E1E8C98BC00E04C27 /* ZY_textField_View.m in Sources */,
 				DF74B21B1EEA951000B266CC /* MY_MapVC.m in Sources */,
@@ -3225,7 +3245,6 @@
 				DF6684401F73959F0037521B /* RelationSelectView.m in Sources */,
 				C73E6A4B1F94A39C00500928 /* FJBaseTableView.m in Sources */,
 				DF66844C1F73BF6E0037521B /* GenderSelectView.m in Sources */,
-				DF5B40861E8C98DC00E04C27 /* NSString+pinyin.m in Sources */,
 				DF5B3F361E8C98BC00E04C27 /* XWFilterAnimator+XWMod.m in Sources */,
 				DF5B40911E8C98DC00E04C27 /* MeViewController.m in Sources */,
 				DF5B407E1E8C98DC00E04C27 /* CrossVC.m in Sources */,
@@ -3242,6 +3261,7 @@
 				C73E6A231F94A13300500928 /* FJFirstShopViewController.m in Sources */,
 				DF758D421F03750F006A43C7 /* ApproveDetailStateModel.m in Sources */,
 				DF5B40B31E8C98E900E04C27 /* MainTabBarButton.m in Sources */,
+				C7BC38A01FC7B21100AA7220 /* NSString+ChinesePinyin.m in Sources */,
 				DF5B407C1E8C98DC00E04C27 /* picTureVC.m in Sources */,
 				DF5B408D1E8C98DC00E04C27 /* CoreLocationVC.m in Sources */,
 				DF5B3F0D1E8C98BC00E04C27 /* NSArray+UnicodeReadable.m in Sources */,

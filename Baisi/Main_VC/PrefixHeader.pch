@@ -33,6 +33,7 @@
 #define CLCommonColor(v) CLColor(v,v,v)
 
 /******** 关于颜色的宏********/
+#ifdef __OBJC__
 
 #import "ZY_button.h"//自定义button
 #import "LoginViewController.h"
@@ -49,4 +50,6 @@
 #import "UIImage+XHGIF.h"
 #import "UIImageView+XHWebCache.h"
 #import "UIView+Toast.h"
+
+#endif
 #endif /* PrefixHeader_pch */

@@ -10,7 +10,7 @@
 #import "PrefixHeader.pch"
 #import "Utils.h"
 #import "UserDTO.h"
-#import "NSString+pinyin.h"
+#import "NSString+ChinesePinyin.h"
 #import "ZY_Runing_Loding.h"
 #import "TeamSearchModel.h"
 #import "HHPatientDataViewController.h"
